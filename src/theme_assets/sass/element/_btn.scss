@@ -1,0 +1,40 @@
+// this file contains theme specific btn styles
+.gradient-one {
+    background-image: linear-gradient(to right, $primary, $secondary);
+    transition: $transition-base;
+    width: 150px;
+
+    &:hover {
+        background-image: linear-gradient(to left, $primary, $secondary);
+    }
+}
+
+.gradient-two {
+    background-image: linear-gradient(to right, $primary, $warning);
+    width: 195px;
+
+    &:hover {
+        background-image: linear-gradient(to left, $primary, $warning);
+        transition: $transition-base;
+    }
+}
+
+.btn {
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        background: $white;
+        border-radius: 50%;
+        color: $primary;
+        width: 25px;
+        height: 25px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+}

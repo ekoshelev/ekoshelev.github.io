@@ -1,0 +1,210 @@
+// this file contains the configuration
+// for customizing bootstrap,
+// and other theme components
+
+@import "scss/functions";
+@import "scss/mixins";
+@import "scss/variables";
+
+
+// theme color
+$light-gray:    #bbbfd3;
+$primary:       #ff458a;
+$secondary:     #9248e9;
+$success:       #2dd46f;
+$info:          #3b7cfd;
+$warning:       #fa8b0c;
+$danger:        #ff2640;
+$dark:          #272b41;
+$light:         #f5f7fc;
+$body-color:    #7a82a6;
+
+$theme-colors: (); 
+
+// stylelint-disable
+
+$bg-color:      #f9f8fb;
+
+$gray-100: #c9cfe4;
+$white:    #ffffff;
+
+
+$footer-dark:           #353b58;
+
+// other colors, these are the colors
+// that has been used in different part of ui exceptionally
+
+$other-colors: (
+    "footer-dark": $footer-dark
+); 
+
+//social colors
+$facebook:    #3b5998;
+$twitter:     #55acee;
+$pinterest:   #bd081c;
+$gplus:       #dc4e41;
+$linkedin:    #0077b5;
+$tumblr:      #35465c;
+$vk:          #4A76A8;
+
+$social-colors: ();
+
+// stylelint disabled
+$social-colors: map-merge(
+  (
+    "facebook":   $facebook,
+    "twitter":    $twitter,
+    "pinterest":  $pinterest,
+    "gplus":      $gplus,
+    "linkedin":   $linkedin,
+    "tumblr":     $tumblr,
+    "vk":         $vk
+  ),
+  $social-colors
+); 
+
+// border color
+$border-light:                #e9ebf4;
+$border-color:                #e3e6ef;
+
+// shadows
+$box-shadow-color:            #7d6e90;
+$box-shadow-bg-white:         0 5px 30px rgba($box-shadow-color, 0.15); // for white bg
+
+// font
+$font-size-base:              1rem;
+$font-family-base:           'Poppins', sans-serif; //'Poppins', sans-serif;
+ 
+// breadcrumb
+$breadcrumb-bg:                     none;
+$breadcrumb-active-color:           $white;
+
+// btn
+$btn-font-weight:             400;
+
+$btn-padding-x-sm:            1.66rem;
+$btn-padding-x-lg:            2.33rem;
+$btn-font-size:               0.875rem;
+
+$btn-line-height:             1.6875rem;
+$btn-line-height-lg:          3.66 - ($btn-padding-y-lg*2);
+$btn-line-height-sm:          2.66 - ($btn-padding-y-sm*2);
+$btn-border-radius:           0.2rem;
+
+
+
+// leading text
+$lead-font-size:              ($font-size-base * 1.33);
+$lead-font-weight:            400;
+$lead-medium-font-size:       ($font-size-base * 1.6);
+$lead-medium-font-weight:     500;
+
+// link
+$link-color: $primary;
+$link-hover-decoration:     none;
+$link-hover-color:          $primary;
+
+// navbar
+$navbar-padding-y:                  1.3rem;
+
+$navbar-light-color:                $dark;
+$navbar-light-toggler-border-color: $primary;
+$navbar-light-hover-color:          $primary;
+$navbar-light-active-color:         none;
+
+
+$navbar-dark-color:                 rgba($white, 1);
+$navbar-dark-hover-color:           $white;
+
+// card
+$card-bg:                           none;
+$card-border-color:                 none;
+
+
+
+//Headings Font Sizes
+$h1-font-size:                1.875rem; //30px
+$h2-font-size:                1.5rem; //24px
+$h3-font-size:                1.33rem; //20px
+$h4-font-size:                1.125rem; //18px
+$h5-font-size:                1.07rem; //16px
+$h6-font-size:                1rem; //15px
+$headings-margin-bottom:      0;
+$headings-color:              $dark;
+$headings-font-weight:        600;
+$headings-line-height:        2.125rem;
+
+$headings-font-family:        "Poppins", sans-serif;
+
+// alerts 
+$alert-padding-y:                   0;
+$alert-padding-x:                   0;
+
+//form elements
+$input-height:                3.2rem;
+$input-height-lg:             3.47rem;
+$input-height-sm:             2.8rem;
+$input-padding-x:             1.2rem;
+$form-text-margin-top:        .66rem;
+$input-border-radius:         $border-radius-sm;
+$input-border-color:          $border-color;
+
+$border-radius-sm:            .2rem;
+
+$input-bg:                              $bg-color;
+$input-focus-border-color:              $primary;
+$input-focus-box-shadow:                none; 
+
+// tabs
+$nav-tabs-border-radius:            0;
+$nav-tabs-link-active-color:        $secondary;
+$nav-tabs-link-active-bg:           $light;
+
+$nav-pills-border-radius:           13.33rem;
+$nav-pills-link-active-color:       $component-active-color;
+$nav-pills-link-active-bg:          $primary;
+
+
+
+$dropdown-font-size:                0.875rem;
+$dropdown-bg:                       rgba($white, 1);
+$dropdown-link-color:               $dark;
+$dropdown-padding-y:                0;
+$dropdown-spacer:                   0; 
+$dropdown-min-width:                0;
+$dropdown-item-padding-y:           .25rem;
+$dropdown-item-padding-x:           1rem;
+
+//transition
+$transition-base:             all .3s ease-in-out;
+
+//hr
+$hr-margin-y:                 4.67rem;
+$hr-border-color:             $border-light;
+
+//badges
+$badge-padding-y:             .5rem;
+$badge-padding-x:             .5rem;
+$badge-font-size:             0.8rem;
+$badge-font-weight:           600;
+$badge-border-radius:         0.133rem;
+$badge-pill-padding-x:        0.86rem;
+
+$line-height-base:            2.125;
+
+// Progress bars
+
+$progress-height:                   1.3rem;
+$progress-font-size:                1rem;
+
+//modal
+$modal-md:                          420px;
+
+$navbar-nav-link-padding-x:         1rem;
+$btn-border-width:                  0;  
+$btn-active-box-shadow:             none; 
+$paragraph-margin-bottom:           0; 
+$alert-border-width:                0;
+$alert-margin-bottom:               0;
+ 
+@import "scss/variables"; 

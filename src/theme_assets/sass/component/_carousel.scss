@@ -1,0 +1,239 @@
+/* Start_carousel_one */
+.carousel-single-wrapper {
+    background-image: linear-gradient(to right, $secondary, $primary);
+}
+
+.owl-carousel { 
+    .owl-item {
+        img {
+            display: inline-block;
+            width: auto;
+        }
+    }
+}
+
+.carousel-one-img {
+    width: 100%;
+    background: $white;
+}
+
+.carousel-single-inner {
+    padding: 2.66rem;
+    padding-right: 0;
+    color: #fff;
+
+    .google {
+        color: #fff;
+        line-height: 34px;
+    }
+
+    span {
+        color: rgba($white, 0.5);
+        font-size: 14px;
+        line-height: 34px;
+    }
+
+    h2 {
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    p {
+        color: rgba($white, 0.7); 
+        line-height: 28px;
+    }
+}
+
+//dots style
+.owl-dots {
+    text-align: center;
+    margin-top: 18px;
+
+    .owl-dot {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        span {
+            width: 10px;
+            height: 10px;
+            border-radius: 300px;
+            background: rgba($primary, 0.2);
+            display: inline-block;
+        }
+
+        &.active {
+            span {
+                @extend .bg-primary;
+            }
+        }
+    }
+
+    &.dot-secondary {
+        .owl-dot {
+            span {
+                border: 0 none;
+                background: rgba($primary, 0.2);
+            }
+
+            &.active {
+                span {
+                    width: 20px;
+                    @extend .bg-primary;
+                }
+            }
+        }
+    }
+}
+
+/* End_carousel_one */
+
+/* Start_carousel_two */
+.owl-carousel {
+    position: relative;
+
+    .carousel-two-img {
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+.owl-item {
+    .card {
+        position: relative;
+        cursor: pointer;
+                transform: scale(1);
+        transition: $transition-base;
+        z-index: 1;
+
+        .carousel-two-img span,
+        .carousel-two-details {
+            visibility: hidden;
+        }
+    }
+
+    &.center .card {
+        cursor: auto;
+                transform: scale(1.2);
+        z-index: 3;
+
+        .carousel-two-img span,
+        .carousel-two-details {
+            visibility: visible;
+            transition: $transition-base;
+            border-radius: 0 0 3px 3px;
+        }
+    }
+}
+
+.carousel-two-img {
+    z-index: 1;
+
+    span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        i {
+            background: $secondary;
+            padding: 8px;
+            color: $white;
+            border-radius: 3px;
+            font-size: 1rem;
+        }
+    }
+}
+
+.carousel-two-details {
+    padding: 1rem 1.875rem;
+    box-shadow: $box-shadow-bg-white;
+
+    h4 {
+        font-weight: 500;
+
+    }
+
+    p {
+        line-height: 34px;
+    }
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    bottom: 16%;
+            transform: translate(15%, -20%);
+
+    &:focus {
+        outline: none;
+    }
+
+    i {
+        background: rgba($primary, 0.1);
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: $primary;
+        font-size: 1.07rem;
+        border-radius: 50%;
+        transition: $transition-base;
+
+        &:hover {
+            background: $primary;
+            color: $white;
+        }
+    }
+}
+
+.owl-prev {
+    left: 10%;
+}
+
+.owl-next {
+    right: 10%;
+}
+
+/* End_carousel_two */
+
+
+/* Start_testimonial */
+.testimonial {
+    position: relative;
+    background-color: $bg-color;
+
+    .img-shape {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 90%;
+        height: 100%;
+    }
+
+    h6 {
+        line-height: 28px;
+
+        span {
+            color: $primary;
+            font-size: 15px;
+        }
+    }
+
+    .testimonial-single-inner {
+        p {
+            font-size: 18px;
+            line-height: 36px;
+        }
+    }
+}
+
+/* end_testimonial */

@@ -1,0 +1,228 @@
+/*****************************
+	RESPONSIVE
+*****************************/
+/*this is responsive scss*/
+$tablet: 768px;
+$laptop: 1070px;
+$ipad: 992px;
+
+/* ========================
+    992 TO 1199
+=========================== */
+@media (min-width: $ipad) and (max-width: 1199px) {
+    
+
+    .titile {
+        font-size: 139px;
+    }
+}
+
+
+/* =======================
+  991
+========================== */
+@media (max-width: $ipad - 1) {
+
+    /* Intro - area */
+    .intro-area {
+        .one {
+            width: 30%;
+        }
+    }
+
+    .navbar {
+        background: $secondary;
+
+        .nav-item {
+            padding: 10px 0;
+            .nav-link {
+                color: $white !important;
+                font-size: 16px;
+            }
+        }
+
+        span {
+            color: $primary;
+        }
+    }
+
+    .dropdown {
+        .dropdown-menu {
+            display: none;
+            visibility: visible;
+            -webkit-transition: $transition-base;
+            -o-transition: $transition-base;
+            transition: $transition-base;
+            opacity: 0;
+            &.show {
+                display: block;
+                -webkit-transition: $transition-base;
+                -o-transition: $transition-base;
+                transition: $transition-base;
+                opacity: 1;
+            }
+        }
+    }
+
+    .carousel-one {
+        .carousel-single-inner {
+            padding-right: 25px;
+        }
+    }
+
+    .progress {
+        margin-top: 0;
+    }
+}
+
+/* =======================
+  768 TO 991
+========================== */
+@media (min-width: $tablet) and (max-width: $ipad - 1px) {
+    html {
+        font-size: 14.5px;
+    }
+
+    .titile {
+        font-size: 80px;
+    }
+}
+
+/* =======================
+  767
+========================== */
+@media screen and (max-width: $tablet - 1) {
+    .intro-area {
+        min-height: 1000px;
+        .one {
+            width: 40%;
+        }
+    }
+
+    .titile {
+        font-size: 80px;
+    }
+
+    .heading_style1 {
+        margin-top: 100px;
+    }
+
+    .service {
+        padding-top: 50px;
+    }
+
+    .carousel-one-img {
+        padding: 50px 0;
+    }
+
+    .footer-wrapper {
+        padding: 15px;
+
+        .shape-2 {
+            &:before {
+                width: 100px !important;
+                height: 100px !important;
+            }
+    
+            &:after {
+                width: 50px !important;
+                height: 50px !important;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    html {
+        font-size: 13px;
+    }
+
+    .titile {
+        font-size: 80px;
+    }
+}
+
+/* ======================
+  480 TO 575
+========================= */
+@media (min-width: 480px) and (max-width: 575px) {
+    html {
+        font-size: 14px;
+    }
+
+    .titile {
+        font-size: 80px;
+    }
+
+    .carousel-two-img span {
+        right: 10%;
+    }
+
+    .carousel-two-details {
+        padding: 20px 50px !important;
+    }
+
+    .owl-nav {
+        .owl-prev {
+            position: absolute;
+            bottom: -10%;
+        }
+
+        .owl-next {
+            position: absolute;
+            bottom: -10%;
+        }
+    }
+}
+
+/* ======================
+  320 TO 576
+========================= */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .intro-area {
+        min-height: 850px;
+    }
+
+    .heading_style1 {
+        margin-bottom: 50px;
+
+        h1 {
+            font-size: 40px;
+    
+            span {
+                color: $primary;
+            }
+        }
+    
+        p {
+            line-height: 2.125rem;
+            font-size: 14px;
+        }
+    }
+
+    .carousel-two-details {
+        padding: 1.8rem 3rem;
+    }
+
+    .titile {
+        font-size: 50px;
+    }
+
+    .carousel-two-img span {
+        right: 10%;
+    }
+    
+    .owl-nav {
+        .owl-prev {
+            position: absolute;
+            bottom: -10%;
+        }
+
+        .owl-next {
+            position: absolute;
+            bottom: -10%;
+        }
+    }
+}

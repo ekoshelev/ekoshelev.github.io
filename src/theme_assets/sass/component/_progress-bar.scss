@@ -1,0 +1,151 @@
+.progress {
+    background: $white;
+    z-index: 3;
+    line-height: $progress-height;
+}
+
+.progress-shape {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 90%;
+        background: transparent;
+        border: 10px solid rgba($primary, 0.05);
+        border-radius: 50%;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 5%;
+        width: 50%;
+        height: 11%;
+        background: $white;
+        transform: translateX(-50%);
+    }
+}
+
+.progress-shape-2 {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 90%;
+        background: transparent;
+        border: 10px solid rgba($primary, 0.05);
+        border-radius: 50%;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        bottom: 5%;
+        width: 50%;
+        height: 10%;
+        background: $white;
+        transform: translateX(-50%);
+    }
+}
+
+.progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    box-shadow: $box-shadow-bg-white;
+    border-radius: 50%;
+
+    .progress-text, h6 {
+        position: absolute;
+        color: $body-color;
+        font-size: 15px;
+        font-weight: 500;
+
+        span {
+            display: inline-block;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .count-one {
+            color: $primary;
+        }
+        
+        .count-two {
+            color: $secondary;
+        }
+
+        .count-three {
+            color: $success;
+        }
+    }
+}
+
+#progress1,
+#progress2,
+#progress3 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotateY(180deg);
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    box-shadow: $box-shadow-bg-white;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 3;
+
+    .progress-text, h6 {
+        position: absolute;
+        transform: rotateY(-180deg);
+        text-align: center;
+        color: $body-color;
+
+        span {
+            display: inline-block;
+            font-size: 2.5rem;
+        }
+
+        .count-one {
+            color: $primary;
+        }
+        
+        .count-two {
+            color: $secondary;
+        }
+
+        .count-three {
+            color: $success;
+        }
+    }
+}
+
+#progress4,
+#progress6 {
+    transform: rotate(50deg);
+
+    h6 {
+        transform: rotate(-50deg);
+    }
+}
+
+.counter {
+    position: relative;
+    background-image: url(../img/curve-bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}

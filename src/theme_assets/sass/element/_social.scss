@@ -1,0 +1,44 @@
+/* social css */
+.social {
+    ul {
+        list-style: none;
+        li {
+            margin-right: remy(10px);
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                line-height: remy(40px);
+                width: remy(38px);
+                display: inline-block;
+                text-align: center;
+                border-radius: remy(500px);
+                background: rgba($white, 0.2);
+                color: $white;
+
+                i {
+                    font-size: remy(15px);
+                }
+
+                &:hover {
+                    background-color: $primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.social-2 {
+    ul {
+        li {
+
+            a {
+                background: rgba($primary, 0.2);
+                color: $primary;
+            }
+        }
+    }
+}
