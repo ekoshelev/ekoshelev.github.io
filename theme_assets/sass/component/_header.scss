@@ -1,0 +1,30 @@
+.heading_style1 {
+    span {
+        font-size: 3rem;
+        line-height: 2.375rem;
+        color: rgba($dark, 0.2);
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 2.375rem;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    p {
+        line-height: 2.125rem;
+    }
+}
+
+.heading_style2 {
+    position: relative;
+
+    .image-shape {
+        position: absolute;
+        top: 0;
+    }
+}

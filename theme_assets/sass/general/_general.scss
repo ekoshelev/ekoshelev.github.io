@@ -1,0 +1,12 @@
+@import "../mixins/functions";
+@import "../../../vendor_assets/css/bootstrap/config.bs";
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ol {
+    padding: 0 0 0 15px;
+}

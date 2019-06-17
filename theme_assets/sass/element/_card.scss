@@ -1,0 +1,100 @@
+.card {
+    .blog-title {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 1.33333rem;
+        margin-bottom: 1.33333rem;
+    }
+}
+
+.card-body {
+    position: relative;
+    box-shadow: $box-shadow-bg-white;
+    border-radius: $input-border-radius;
+    padding: 25px 30px;
+
+    h4 {
+        font-weight: 500;
+    }
+
+    .badge {
+        color: $white;
+    }
+
+    p {
+        line-height: 28px;
+    }
+}
+
+.shape { 
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        top: 0;
+        left: 0;
+        border-bottom-right-radius: 100%;
+        border-right: 20px solid #F9F6FE;
+        border-bottom: 20px solid #F9F6FE;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        top: 0;
+        left: 0;
+        border-bottom-right-radius: 100%;
+        border-right: 20px solid #FFF6F9;
+        border-bottom: 20px solid #FFF6F9;
+    }
+}
+
+.shape-2 {
+    &:before, &:after {
+        left: 15px;
+    }
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6 {
+    color: #fff;
+    transform: rotate(-45deg);
+
+    i {
+        font-size: 40px;
+        line-height: 80px;
+        transform: rotate(45deg);
+    }
+}
+
+.icon1 {
+    background-image: linear-gradient(to right, $secondary, $primary);
+}
+
+.icon2 {
+    background-image: linear-gradient(to right, $info, $secondary);
+}
+
+.icon3 {
+    background-image: linear-gradient(to right, $primary, $warning);
+}
+
+.icon4 {
+    background-image: linear-gradient(to right, $info, $success);
+}
+
+.icon5 {
+    background-image: linear-gradient(to right, #3A7DFD, #0ad9fe);
+}
+
+.icon6 {
+    background-image: linear-gradient(to right, $secondary, #db7aff);
+}
