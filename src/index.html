@@ -540,24 +540,26 @@
               <h1 class="m-bottom-20 card-title"> Interested to work with me? </h1>
             </div>
             <p class="text-center m-bottom-20">Shoot me an email and let's connect! <br></p>
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group m-bottom-25">
-                  <input type="text" class="form-control" placeholder="First Name" aria-label="Recipient's username">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="First Name" aria-label="Recipient's username">
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group m-bottom-20">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  <input type="email" id="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="7" placeholder="Description of work" required=""></textarea>
+              <textarea class="form-control" id="message" name="message" rows="7" placeholder="Description of work" required=""></textarea>
             </div>
             <div class="d-flex justify-content-center">
-              <a class="btn btn-secondary gradient-two" href="">Let’s Talk</a>
+              <a class="btn btn-secondary gradient-two" href="document.getElementById('contact-form').submit();">Let’s Talk</a>
             </div>
+          </form>
           </div>
           <div class="row m-top-30 m-bottom-30">
             <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
